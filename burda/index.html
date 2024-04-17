@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <title>Burda</title>
+</head>
+<body>
+
+
+
+<!-- navbar -->
+<section class="navbar">
+    <div class="contentt" style="position: relative;">
+    <a id="logo" href="./index.html"><img src="./images/65a15c07446168a08bff7fa6_logo.svg" alt="logo"></a>
+    <ul id="contentToToggle">
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+        <li id="list_item"><a href="https://www.instagram.com/burdaapp">Instagram</a></li>
+    </ul>
+    <div id="toggleButton" class="menu">
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <a class="instagram" id="instagram" href="https://www.instagram.com/burdaapp">Instagram</a>
+</div>
+</section>
+
+
+
+<!-- hero section -->
+<section class="hero" style="color:#2b2b2b">
+    <div class="content" id="hero-content">
+        <h1>Ətrafdakıları görmək <br> üçün <span> #burda </span>var</h1>
+        <p class="p1-hero">Çatlaş, tanış ol və həyatına fərqli insanlar qat</p>
+            <form id="phoneForm">
+                <div class="form">
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Mobil nömrə"><br>
+                    <button type="button" id="submit" style="font-weight: 700;line-height: 16px; transition: all .35s;" onclick="validatePhone()">Mənə xəbər et</button></div>
+                <span id="phoneError" class="error"></span><br>
+            </form>
+
+            <div id="submissionText" style="line-height: 20px; display: none;">
+                <p>Təbriklər! Sizi qeydiyyata aldıq. Tətbiq hazır olan kimi sizə xəbər edəcəyik.</p>
+            </div>
+        <p class="p1-hero" style="font-size: 1rem; font-weight: 500;" id="margin">Ön-qeydiyyat üçün mobil nömrənizi qeyd edin.</p>
+        <img class="mobile" src="./images/7.png" alt="mobile"> 
+        <div class="wv" style="margin-top:100px">           
+        <img src="./images/Frame 344.png" class="phone" alt="hero_img">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- info section -->
+<section class="info">
+    <div class="content" id="info-content">
+        <h2 style="color:white"> <span> #burda </span> nə var?</h2>
+        <div class="grid-info">
+            <div class="featurecard" id="div1">
+                <svg style="margin-bottom: 20px;" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M64 31.4286C64 56.5714 36 68 36 68C36 68 8 56.5714 8 31.4286C8 16.2768 20.536 4 36 4C51.464 4 64 16.2768 64 31.4286ZM36 46C43.732 46 50 39.732 50 32C50 24.268 43.732 18 36 18C28.268 18 22 24.268 22 32C22 39.732 28.268 46 36 46Z" fill="#EE6A57"/>
+                </svg>
+                <h3>Ətrafdakıları gör</h3> 
+                <p class="p2">Təksən və ürəyin sıxılır? Tətbiqi aç və tanış olmaq üçün kimsə tap</p> 
+                <img id="img_1" src="./images/65c3f76c3ed7ed17ddec8bb9_Frame 287.png" alt="3d">
+            </div>
+            <div class="featurecard">
+                <svg style="margin-bottom: 20px;" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.8641 50.886C60.429 51.3398 60.2084 51.962 60.2888 52.5854L61.7293 63.749C61.9466 65.4334 60.0981 66.605 58.6676 65.6895L48.954 59.4728C48.4379 59.1425 47.8 59.0704 47.2157 59.2549C43.8655 60.3129 40.2584 60.8889 36.5 60.8889C18.8269 60.8889 4.5 48.1539 4.5 32.4444C4.5 16.735 18.8269 4 36.5 4C54.1731 4 68.5 16.735 68.5 32.4444C68.5 39.4807 65.6258 45.9203 60.8641 50.886Z" fill="#EE6A57"/>
+                </svg>
+                <h3>Mesaj yaz</h3>
+                <p class="p2">Yazışmaq üçün bəhanə sənin onla eyni yerdə olman ola bilər məsələn</p>
+            </div>
+            <div class="featurecard gradient">
+                <svg style="margin-bottom: 20px;" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M68 36C68 53.6731 53.6731 68 36 68C18.3269 68 4 53.6731 4 36C4 18.3269 18.3269 4 36 4C53.6731 4 68 18.3269 68 36ZM38 20C38 18.8954 37.1046 18 36 18C34.8954 18 34 18.8954 34 20V34H20C18.8954 34 18 34.8954 18 36C18 37.1046 18.8954 38 20 38H34V52C34 53.1046 34.8954 54 36 54C37.1046 54 38 53.1046 38 52V38H52C53.1046 38 54 37.1046 54 36C54 34.8954 53.1046 34 52 34H38V20Z" fill="white"/>
+                </svg>
+                <h3>Story paylaş</h3>
+                <p class="p2">Olduğun yerdə maraqlı nəsə baş verirsə, kameranı aç və ətrafdakılarla paylaş</p>
+            </div>
+            <div class="featurecard animat" id="div4">
+                <div class="row" id="column">
+                    <div>
+                        <div id="vip" style="margin-bottom: 20px;">
+                        <div id="circle"></div>
+                    </div>
+                        <h3 id = "white" style="margin-top: 30px;">Gizli rejim</h3>
+                        <p id = "white_1" class="p2">Özünü gizlət, hər kəsi gör, yaz</p>
+                    </div>
+                    <div class="block">
+                        <div class="row">
+                            <h1 id = "white_2" style="font-size: 100px; line-height: 100px;">VIP</h1>
+                            <svg width="85" height="100" viewBox="0 0 85 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.837891 50.6729V50.6729L12.2912 58.4043V58.4043L0.837891 50.6729Z" fill="#E66A39"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.1914 33.9556V33.9556L48.6447 41.6869V41.6869L37.1914 33.9556Z" fill="#E66A39"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.837891 50.6729C0.837891 67.8153 9.21374 78.085 17.9246 84.1302L29.3779 91.8615C20.667 85.8163 12.2912 75.5466 12.2912 58.4043L0.837891 50.6729Z" fill="#E66A39"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9277 84.1281C27.3645 90.677 37.1945 92.2681 37.1945 92.2681L48.6478 99.9994C48.6478 99.9994 38.8178 98.4084 29.381 91.8594L17.9277 84.1281Z" fill="url(#paint0_linear_1690_19328)"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.1914 92.2686C37.1914 92.2686 73.5451 65.6862 73.5451 29.973L84.9984 37.7043C84.9984 73.4175 48.6447 100 48.6447 100L37.1914 92.2686Z" fill="url(#paint1_linear_1690_19328)"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M73.5468 29.9724C73.5468 18.7812 69.1457 9.94702 62.0977 4.84839L73.551 12.5797C80.599 17.6784 85.0001 26.5125 85.0001 37.7038L73.5468 29.9724Z" fill="url(#paint2_linear_1690_19328)"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M62.096 4.84782C55.59 0.141387 46.8287 -1.38213 37.1914 1.36142L48.6447 9.09277C58.282 6.34922 67.0434 7.87274 73.5493 12.5792L62.096 4.84782Z" fill="url(#paint3_linear_1690_19328)"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.1914 1.362C17.1139 7.0777 0.837891 29.1492 0.837891 50.6708L12.2912 58.4022C12.2912 36.8805 28.5672 14.8091 48.6447 9.09335L37.1914 1.362Z" fill="#E66A39"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.1923 33.9552C36.5646 32.8682 35.7845 31.991 34.8945 31.3247L46.3478 39.0561C47.2378 39.7223 48.0179 40.5995 48.6456 41.6865L37.1923 33.9552Z" fill="#E66A39"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.8947 31.3248C31.3349 28.6598 26.018 29.3698 21.6699 33.5296L33.1232 41.2609C37.4713 37.1012 42.7882 36.3911 46.348 39.0562L34.8947 31.3248Z" fill="#E98A56"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6701 33.5303C16.2353 38.7301 14.3723 47.3644 17.5109 52.812L28.9642 60.5433C25.8256 55.0958 27.6886 46.4615 33.1234 41.2617L21.6701 33.5303Z" fill="url(#paint4_linear_1690_19328)"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5078 52.8124C19.1744 55.6982 21.7898 58.1178 24.5761 60.0741L36.0294 67.8054C33.2431 65.8491 30.6277 63.4295 28.9611 60.5437L17.5078 52.8124Z" fill="#DC6E58"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5781 60.0729C30.499 64.23 37.1915 66.2949 37.1915 66.2949L48.6448 74.0263C48.6448 74.0263 41.9523 71.9614 36.0314 67.8043L24.5781 60.0729Z" fill="#E66A39"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M37.1914 66.2953C37.1914 66.2953 51.665 53.589 56.8733 41.6055L68.3266 49.3369C63.1183 61.3203 48.6447 74.0266 48.6447 74.0266L37.1914 66.2953Z" fill="#E66A39"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M56.8731 41.6047C59.6349 35.2383 58.5238 28.6093 54.5137 25.6753L65.967 33.4066C69.9771 36.3407 71.0882 42.9697 68.3264 49.3361L56.8731 41.6047Z" fill="#E66A39"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M54.5146 25.6749C53.9678 25.2748 53.367 24.9434 52.7148 24.6907L64.1681 32.4221C64.8203 32.6747 65.4211 33.0061 65.9679 33.4062L54.5146 25.6749Z" fill="#E66A39"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M52.714 24.6913C47.279 22.5862 40.33 26.7331 37.1914 33.955L48.6447 41.6864C51.7833 34.4645 58.7323 30.3175 64.1673 32.4227L52.714 24.6913Z" fill="#DC8353"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.837891 50.6708C0.837891 86.384 37.1914 92.2681 37.1914 92.2681C37.1914 92.2681 73.5451 65.6856 73.5451 29.9724C73.5451 8.45077 57.269 -4.35376 37.1914 1.36197C17.1139 7.07767 0.837891 29.1492 0.837891 50.6708ZM37.1914 33.9552C34.053 28.5203 27.104 28.3298 21.6689 33.5295C16.2341 38.7293 14.3712 47.3636 17.5097 52.8112C22.718 61.8292 37.1914 66.2948 37.1914 66.2948C37.1914 66.2948 51.665 53.5886 56.8732 41.6051C60.0117 34.3706 58.1489 26.7969 52.714 24.6915C47.279 22.5864 40.33 26.7333 37.1914 33.9552Z" fill="url(#paint5_linear_1690_19328)"/>
+                                <g filter="url(#filter0_di_1690_19328)">
+                                <path d="M21.6701 33.5296C27.1051 28.3299 34.0541 28.5204 37.1925 33.9553C40.3311 26.7334 47.2801 22.5865 52.7152 24.6916C58.15 26.797 60.0128 34.3707 56.8744 41.6052C51.6661 53.5886 37.1925 66.2949 37.1925 66.2949C37.1925 66.2949 22.7191 61.8293 17.5109 52.8113C14.3723 47.3637 16.2353 38.7294 21.6701 33.5296Z" fill="url(#paint6_linear_1690_19328)"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_di_1690_19328" x="13.917" y="21.6765" width="48.9385" height="48.6775" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="1.19384" dy="0.795895"/>
+                                <feGaussianBlur stdDeviation="1.63159"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1690_19328"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1690_19328" result="shape"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dx="-1.59179" dy="-1.19384"/>
+                                <feGaussianBlur stdDeviation="0.397948"/>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1690_19328"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_1690_19328" x1="3.49516" y1="83.1227" x2="57.2764" y2="120.955" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFEA7F"/>
+                                <stop offset="0.489583" stop-color="#744214"/>
+                                <stop offset="0.791667" stop-color="#EEC765"/>
+                                <stop offset="1" stop-color="#D39B5A"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_1690_19328" x1="84.9293" y1="40.4322" x2="16.6336" y2="158.39" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFEA7F"/>
+                                <stop offset="0.489583" stop-color="#744214"/>
+                                <stop offset="0.791667" stop-color="#EEC765"/>
+                                <stop offset="1" stop-color="#D39B5A"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_1690_19328" x1="77.1586" y1="25.2354" x2="40.4941" y2="-6.47184" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFEA7F"/>
+                                <stop offset="0.489583" stop-color="#744214"/>
+                                <stop offset="0.791667" stop-color="#EEC765"/>
+                                <stop offset="1" stop-color="#D39B5A"/>
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_1690_19328" x1="67.0642" y1="9.57445" x2="71.7045" y2="11.0825" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#956A2D"/>
+                                <stop offset="1" stop-color="#B08A42"/>
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_1690_19328" x1="24.5549" y1="33.5303" x2="24.5549" y2="60.5433" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#EA8D55"/>
+                                <stop offset="1" stop-color="#DA6B58"/>
+                                </linearGradient>
+                                <linearGradient id="paint5_linear_1690_19328" x1="-5.00465" y1="0.000550815" x2="79.7597" y2="81.6082" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFEA7F"/>
+                                <stop offset="0.489583" stop-color="#744214"/>
+                                <stop offset="0.791667" stop-color="#EEC765"/>
+                                <stop offset="1" stop-color="#D39B5A"/>
+                                </linearGradient>
+                                <linearGradient id="paint6_linear_1690_19328" x1="37.1926" y1="0.000805201" x2="37.1926" y2="92.2683" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFFCF1"/>
+                                <stop offset="1" stop-color="#FFF9FB"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</section>
+
+
+
+<!-- footer section -->
+<section class="footer">
+    <div class="contentt" id="padding" style="position: relative; padding-top: 24px;">
+    <a href="./index.html"><img src="./images/65a15c07446168a08bff7fa6_logo.svg" alt="logo"></a>
+    <ul id="display">
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+    </ul>
+    <a class="instagram" href="https://www.instagram.com/burdaapp">Instagram</a>
+</div>
+</section>
+    
+<!-- linking js -->
+
+<script src = "./js/script.js"></script>
+<script src = "./js/mobile.js"></script>
+
+</body>
+</html>
